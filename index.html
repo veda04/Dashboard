@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="assets/images/favicon.png">
+      <title>Bakery | Dashboard</title>
+      <!-- css links -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="dashboard-cover">
+         <div class="fixed flex-block">
+            <div class="nav-head-left sidenav" id="sideMenuContainer">
+               <div class="navigation-cover">
+                     <div class="dash-logo">
+                        <img src="assets/images/cafe_ujwal.png" alt="website logo"/>
+                     </div>
+                     <div class="dash-navigation">
+                        <ul class="">
+                           <li class="nav-item active">
+                             <a class="nav-link" href="index.html">
+                               <i class="fa-solid fa-house"></i>
+                               <span class="menu-title">Dashboard</span>
+                             </a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="index.html">
+                               <i class="fa-solid fa-cookie-bite"></i>
+                               <span class="menu-title">Products</span>
+                             </a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="javascript:;">
+                               <i class="fa-solid fa-file-lines"></i>
+                               <span class="dropdown-btn menu-title">Reports</span>
+                               <i class="fa-solid fa-angle-down"></i>
+                             </a>
+                             <div class="dropdown-container">
+                               <a href="javascript:;">Sales Report</a>
+                               <a href="javascript:;">Payments</a>
+                               <a href="javascript:;">Incentives</a>
+                             </div>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="index.html">
+                               <i class="fa-solid fa-id-card-clip"></i>
+                               <span class="menu-title">Staff</span>
+                             </a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="index.html">
+                                 <i class="fa-solid fa-user-gear"></i>
+                                 <span class="menu-title">Users</span>
+                             </a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="index.html">
+                                 <i class="fa-solid fa-power-off"></i>
+                                 <span class="menu-title">Logout</span>
+                             </a>
+                           </li>
+                         </ul>
+                     </div>
+                  </div>
+            </div>
+            <div  class="nav-head-right" id="main">
+               <nav class="fixed flex-block">
+                     <div id="sideMenu" onclick="toggleSideMenu(this);"><i class="fa-solid fa-bars"></i></div>
+                     <div class="nav-profile-cover"><img src="assets/images/user2.jpg" alt="image"></div>                
+               </nav>
+               
+               <div class="main-panel">
+                  <div class="content-wrapper">
+                     <!-- Row :  welcome + KPI Block  : START-->
+                     <div class="row kpi">
+                        <div class="intro-card col-lg-6 col-sm-12  col-xs-12 grid-margin disp-mob">
+                           <img src="assets/images/cupcake2.png" class="card-img-absolute" alt="circle-image">
+                           <div class="card bg-gradient-cc card-img-holder text-white bx-shadow" style="height:100%;">
+                              <div class="card-body">
+                                 <h6 class="card-text">Welcome</h6>
+                                 <h2 class="mb-5">Cafe Host!</h2>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-12 col-xs-12">
+                           <div class="row">
+                              <div class="col-lg-12  grid-margin">
+                                 <div class="card bg-gradient-l1 card-img-holder text-white bx-shadow">
+                                    <div class="card-body">
+                                       <!-- <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"> -->
+                                       <i class="fa-solid fa-list"></i>
+                                       <h6 class="card-text">Total Orders</h6>
+                                       <h2 class="mb-5 count-up" data-num="15000">15,000</h2>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12  grid-margin">
+                                 <div class="card bg-gradient-l2 card-img-holder text-white bx-shadow">
+                                    <div class="card-body">
+                                       <i class="fa-solid fa-blender"></i>
+                                       <h6 class="card-text">Preparing</h6>
+                                       <h2 class="mb-5 count-up" data-num="14045">14,045</h2>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="intro-card col-lg-6 col-sm-12  col-xs-12 grid-margin disp-desk">
+                           <img src="assets/images/cupcake2.png" class="card-img-absolute" alt="circle-image">
+                           <div class="card bg-gradient-cc card-img-holder text-white bx-shadow" style="height:100%;">
+                              <div class="card-body">
+                                 <h6 class="card-text">Welcome</h6>
+                                 <h2 class="mb-5">Cafe Host!</h2>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12  col-xs-12">
+                           <div class="row">
+                              <div class="col-lg-12  grid-margin">
+                                 <div class="card bg-gradient-r1 card-img-holder text-white bx-shadow">
+                                    <div class="card-body">
+                                       <i class="fa-solid fa-face-smile-beam"></i>
+                                       <h6 class="card-text">Completed Orders</h6>
+                                       <h2 class="mb-5 count-up" data-num="3000">3,000</h2>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12  grid-margin">
+                                 <div class="card bg-gradient-r2 card-img-holder text-white bx-shadow">
+                                    <div class="card-body">
+                                       <i class="fa-solid fa-cash-register"></i>
+                                       <h6 class="card-text">Revenue</h6>
+                                       <h2 class="mb-5 count-up" data-num="40000">&#8377; 40,000</h2>
+                                    </div>
+                                 </div>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Row :  welcome + KPI Block  : END -->
+                     <!-- Row :  Line chart + Donut graph  : START-->
+                     <div class="row pie-graphs">
+                        <div class="col-lg-12 grid-margin">
+                           <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                              <div class="card-header">
+                                 <h5 class="card-title">Sale Performance</h5>
+                                 <p>Last 15 days sale statistics</p>
+                              </div>
+                              <div class="card-body">
+                                 <div id="saletrend_chart"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Row :  Line chart + Donut graph  : END -->
+                     <!-- Row : online order table  : START-->
+                     <div class="row">
+                        <div class="col-lg-12 grid-margin">
+                           <div class="card bg-gradient-table2 card-img-holder text-white" style="height:100%;">
+                              <div class="card-body">
+                                 <h4 class="card-title">Online Orders</h4>
+                                 <div class="table-responsive">
+                                    <table class="table">
+                                       <thead>
+                                          <tr>
+                                             <th>Customer Name</th>
+                                             <th> Date of Order </th>
+                                             <th> Date of Delivery </th>
+                                             <th> No of items </th>
+                                             <th>Total</th>
+                                             <th> Status </th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>
+                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 1
+                                             </td>
+                                             <td> 04 Jan 2020 </td>
+                                             <td> 04 Jan 2020 </td>
+                                             <td> 30 </td>
+                                             <td>Rs. 1700</td>
+                                             <td>
+                                                <label class="badge badge-gradient-success text-success">READY</label>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 2
+                                             </td>
+                                             <td> 04 Jan 2020 </td>
+                                             <td> 04 Jan 2020 </td>
+                                             <td> 2 </td>
+                                             <td>Rs. 700</td>
+                                             <td>
+                                                <label class="badge badge-gradient-success text-warning">IN PROGRESS</label>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Row :  online order table  : END -->
+                     <!-- Row :  In store reservations table  : START-->
+                     <div class="row">
+                        <div class="col-lg-12 grid-margin">
+                           <div class="card bg-gradient-table card-img-holder text-white" style="height:100%;">
+                              <div class="card-body">
+                                 <h4 class="card-title">In store Orders</h4>
+                                 <div class="table-responsive">
+                                    <table class="table">
+                                       <thead>
+                                          <tr>
+                                             <th>Customer Name</th>
+                                             <th> Time In </th>
+                                             <th> Table No </th>
+                                             <th> No of items </th>
+                                             <th>Total</th>
+                                             <th> Status </th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>
+                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 1
+                                             </td>
+                                             <td> 10:00 AM </td>
+                                             <td> 1 </td>
+                                             <td> 2 </td>
+                                             <td>Rs. 700</td>
+                                             <td>
+                                                <label class="badge badge-gradient-success text-success">READY</label>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 2
+                                             </td>
+                                             <td> 10:30 AM </td>
+                                             <td> 2 </td>
+                                             <td> 4 </td>
+                                             <td>Rs. 800</td>
+                                             <td>
+                                                <label class="badge badge-gradient-success text-primary">SERVING NOW</label>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 3
+                                             </td>
+                                             <td> 9:50 AM </td>
+                                             <td> 3 </td>
+                                             <td> 7 </td>
+                                             <td>Rs. 10,000</td>
+                                             <td>
+                                                <label class="badge badge-gradient-success  text-white1">BILLED</label>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
+                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 4
+                                             </td>
+                                             <td> 11:00 AM </td>
+                                             <td> 4 </td>
+                                             <td> 4 </td>
+                                             <td>Rs. 600</td>
+                                             <td>
+                                                <label class="badge badge-gradient-success text-warning">IN PROGRESS</label>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Row :  In store reservations table  : END -->
+                     <!-- Row :  Pie chart + bar graph  : START-->
+                     <div class="row pie-graphs">
+                        <div class="col-lg-6">
+                           <div class="row">
+                              <div class="col-lg-12 grid-margin">
+                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                    <div class="card-header">
+                                       <h5 class="card-title">Most liked by customers</h5>
+                                       <p>Most reviewed products</p>
+                                    </div>
+                                    <div class="card-body">
+                                       <div id="product_review"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 grid-margin">
+                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                    <div class="card-header">
+                                       <h5 class="card-title">Top Selling Products</h5>
+                                       <p>Most selling products</p>
+                                    </div>
+                                    <div class="card-body">
+                                       <div id="product_sold"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="row">
+                              <div class="col-lg-12 grid-margin">
+                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                    <div class="card-header">
+                                       <h5 class="card-title">Sale v/s Targets</h5>
+                                       <p>Comparison of sales and targets over the years</p>
+                                    </div>
+                                    <div class="card-body">
+                                       <div id="yearlysales"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 grid-margin">
+                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                    <div class="card-header">
+                                       <h5 class="card-title">Happy Customers</h5>
+                                       <p>Served customers today</p>
+                                    </div>
+                                    <div class="card-body">
+                                       <div id="served_chart"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Row :  Pie chart + bar graph   : END -->
+                </div>
+
+                <footer>
+                   <div>
+                      <p>&copy; Copyrights 2022. Designed by Veda Salkar</p>
+                   </div>
+                </footer>
+                  
+            </div>
+            </div>
+            
+         </div>
+      </div>
+      </div>
+      <!-- javaScript links -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <script  type="text/javascript" src="assets/js/graph.js"></script>
+      <script  type="text/javascript" src="assets/js/common.js"></script>
+      <script src="https://kit.fontawesome.com/0927ed441f.js" crossorigin="anonymous"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+      <script>
+         $(document).ready(function(){
+            var screenWidth = $( window ).width();
+
+            if(screenWidth > 767)
+               toggleSideMenu($('#sideMenu'));
+
+            $('.count-up').each(function () {
+               const CountUpOptions = {
+                   useEasing: true,
+                   separator: ',',
+                   decimal: '.',
+                   prefix: '',
+                   suffix: ' '
+               };
+
+               var elem = $(this)[0];
+               var numValue = $(elem).data('num');//$(this)[0].data('value');
+                const numAnim = new CountUp(elem, 0, numValue, 0, 4.0, CountUpOptions);
+                if (!numAnim.error) {
+                    numAnim.start();
+                }
+            });
+         })
+      </script>
+   </body>
+</html>

@@ -1,0 +1,477 @@
+body{
+  background: #1d2632;
+  font-family: 'Heebo', sans-serif;
+  background: #000 url(../images/coffee-bean-bg.png) no-repeat 50%;
+  background-attachment: fixed !important;
+  background-size: cover;
+  background-position: top;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.flex-block{
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    display: flex !important;
+}
+.card{
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.card-header, .card-body{
+    position: relative;
+}
+.bg-gradient{
+    background: -webkit-gradient(linear, left top, right top, from(#ffbf96), to(#fe7096)) !important;
+    background: linear-gradient(to right, #ffbf96, #ffb796) !important;
+}
+.bg-gradient2,
+.bg-gradient-l1,
+.bg-gradient-l2,
+.bg-gradient-r1,
+.bg-gradient-r2,
+.bg-gradient-table,
+.bg-gradient-table2{
+    background: transparent;
+    position: relative;
+}
+.bg-gradient-cc{
+    background: transparent ;
+}
+.bg-gradient2:before,
+.bg-gradient-l1:before,
+.bg-gradient-l2:before,
+.bg-gradient-r1:before,
+.bg-gradient-r2:before,
+.bg-gradient-cc:before
+{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+        z-index: 0;
+}
+.bg-gradient-table:before,
+.bg-gradient-table2:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+      z-index: 0;
+}
+.bg-gradient2:before{
+    background: #000;
+}
+.bg-gradient-l1:before{
+    background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+}
+.bg-gradient-r1:before{
+        background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+}
+.bg-gradient-cc:before{
+    background: linear-gradient(to right, #ffd243, #ff9055 99%) !important;
+}
+.bg-gradient-l2:before{
+        background: linear-gradient(to right, #6547d9, #f87bcc 99%) !important;
+}
+.bg-gradient-r2:before{
+        background: linear-gradient(to right, #f18677, #de2ead 99%) !important;
+}
+.bg-gradient-table:before{
+        background: linear-gradient(to right,  #41e198, #84d9d2 99%) !important;
+}
+.bg-gradient-table2:before{
+       background: linear-gradient(to right, #41ade1, #84d9d2 99%) !important;
+}
+.bx-shadow{
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(145,145,145,1);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(145,145,145,1);
+    box-shadow: 0px 11px 5px -5px rgb(145 145 145);
+    border: none;
+}
+/**/
+.dropdown-container {
+  display: none;
+  background-color: transparent;
+  padding-left: 26px;
+}
+.dropdown-container a{
+    font: 500 14px/24px 'Heebo', sans-serif !important;
+}
+/*LEFT SIDE : START*/
+.nav-head-left{
+    width: 260px;
+   background: #232d3b;
+   background: url(../images/coffee-menu-bg.jpg) no-repeat 50% 50%;
+   /*background-position: 50%;*/
+   overflow: hidden;
+   background-size: cover;
+}
+.nav-head-left:before{
+    content: "";
+    background: linear-gradient(180deg,#292929,#0e0e0e);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 0;
+}
+.navigation-cover{
+    position: relative;
+    z-index: 111;
+}
+.nav-head-left .dash-logo{
+    height: 70px;
+    padding: 0 10px;
+}
+.nav-head-left .dash-logo img{
+    width: 100%;
+}
+.dash-navigation{
+        margin: 50px 0 0;
+}
+.dash-navigation ul{
+    list-style: none;
+}
+.dash-navigation ul li{
+    padding: 5px 0;
+}
+.dash-navigation ul li i{
+    padding-right: 10px;
+}
+.dash-navigation ul li i.fa-angle-down, .dash-navigation ul li i.fa-angle-up{
+    padding-left: 10px;
+
+}
+.dash-navigation ul li a{
+    color: #fff !important;
+    font: 500 16px/24px 'Heebo', sans-serif;
+    text-transform: uppercase;
+
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; 
+  width: 0;
+  position: fixed;
+  z-index: 13; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 0px; 
+  transition: 0.5s; 
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 17px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 0px 30px;
+}
+
+.no-menu-open{
+    width: calc(100% - 0px) !important;
+}
+/*.no-menu-open nav{
+    width: 96%;
+    position: fixed;
+}*/
+/*LEFT SIDE : END*/
+
+
+/* RIGHT SIDE :START  */
+.nav-head-right{
+       overflow: hidden;
+        color: #9c9fa6;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: calc(100% - 260px);
+}
+.nav-head-right nav{
+    height: 70px;
+    /*background: #c26b6b;*/
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.nav-head-right nav #sideMenu{
+    display: flex;
+    transition: 0.5s;
+    margin: 8px 0 0;
+}
+.nav-head-right nav #sideMenu i{
+    font-size: 23px;
+}
+.nav-head-right .nav-profile-cover{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.nav-head-right .nav-profile-cover img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+/* Header right nav : End */
+
+.main-panel{
+       margin: 115px 0 0;
+}
+
+.intro-card{
+    position: relative;
+}
+/*.intro-card .card{
+    overflow: visible;
+}*/
+.intro-card img{
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -117px;
+    left: 0;
+    z-index: 11;
+}
+.intro-card .card-body{
+        margin-top: 150px;
+}
+.intro-card .card-body h6{
+    font: 600 29px/24px 'Heebo', sans-serif !important;
+    padding: 0 0 16px;
+}
+.intro-card .card-body h2{
+    font: 900 60px/40px 'Heebo', sans-serif !important;
+}
+/* RIGHT SIDE : END */
+
+
+/*card :kpi*/
+.grid-margin{
+    margin-bottom: 1.5rem;
+}
+.kpi .card-body i{
+    font-size: 75px;
+    margin: 0 0 10px;
+}
+.kpi .card-body h6{
+    font: 500 16px/24px 'Heebo', sans-serif;
+}
+.kpi .card-body h2{
+    font: 900 35px/40px 'Heebo', sans-serif;
+    margin-bottom: 1rem !important;
+}
+
+
+/*card:  pie-graphs*/
+.grid-margin{
+    margin-bottom: 1.5rem;
+}
+.kpi .card-body i{
+    font-size: 75px;
+    margin: 0 0 10px;
+}
+.kpi .card-body h6{
+    font: 500 16px/24px 'Heebo', sans-serif;
+}
+.kpi .card-body h2{
+    font: 900 35px/40px 'Heebo', sans-serif;
+    margin-bottom: 0rem !important;
+}
+
+.pie-graphs .card-header h5, h4{
+    font: 700 21px/24px 'Heebo', sans-serif;
+    padding: 10px 0 0;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+}
+.pie-graphs .card-header p{
+    font: 400 14px/22px 'Heebo', sans-serif;
+    margin-bottom: 0.5rem !important;
+}
+table{
+        color: #3d3d3d !important;
+}
+table tr td{
+    font: 500 14px/24px 'Heebo', sans-serif;
+}
+table tr td:first-child{
+    display: flex;
+    align-items: flex-start;
+}
+table tr td:first-child .nav-profile-cover{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+table tr td:first-child .nav-profile-cover img{
+    width: 20px;
+    height: 20px;
+}
+footer p{
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+}
+
+/*Pie chart*/
+.apexcharts-legend {
+    right: 32px !important;
+}
+
+.disp-mob{
+    display: none;
+}
+.disp-desk{
+    display:block;
+}
+.disp-mob{
+    display: none;
+}
+
+
+
+.apexcharts-tooltip, .apexcharts-menu{
+    color: #000 !important;
+    font-weight: 900 !important;
+}
+
+label{
+    font-size: 14px !important;
+}
+.text-primary{
+    background: #000;
+    padding: 5px 10px 3px;
+}
+.text-white1{
+    color: #fff !important;
+    background: #000;
+    padding: 5px 10px 3px;
+}
+.text-warning {
+    color: #ffc107 !important;
+    background: #000;
+    padding: 5px 10px 3px;
+}
+.text-success {
+    color: #198754 !important;
+    background: #000;
+    padding: 5px 10px 3px;
+}
+@media screen and (max-height: 450px) {
+  /*.sidenav {padding-top: 15px;}*/
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 767px) {
+    .nav-head-right nav {
+        height: 55px;
+        justify-content: space-between;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        right: 0;
+        background: #17171778;
+        z-index: 12;
+        padding: 10px;
+        left: 0;
+    }
+    .dash-navigation {
+        margin: 20px 0 0;
+    }
+    .nav-head-right nav #sideMenu {
+        display: flex;
+        transition: 0.5s;
+        margin: 0px 0 0;
+    }
+    .nav-head-left .dash-logo {
+        height: 70px;
+        padding: 0 10px;
+        width: 80%;
+    }
+    .nav-head-right nav #sideMenu {
+        display: flex;
+        position: relative;
+        align-items: center;
+        z-index: 15;
+    }
+    .navigation-cover {
+        position: relative;
+        z-index: 111;
+        margin: 0px 0 0;
+    }
+    .nav-head-right {
+        overflow: hidden;
+        color: #9c9fa6;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: calc(100% - 0px);
+    }
+    .main-panel {
+        margin: 20px 0 0;
+    }
+    .intro-card img {
+        width: 50%;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 18px;
+        left: 0;
+        z-index: 11;
+    }
+    .intro-card .card-body h2 {
+        font: 900 40px/45px 'Heebo', sans-serif !important;
+    }
+
+    .disp-desk{
+        display:none;
+    }
+    .disp-mob{
+        display: block;
+    }
+    footer p {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+    }
+}

@@ -91,36 +91,48 @@ var saletrend_data = {
 
 // radial chart
 var served_options = {
-  series: [
-    randomScalingFactor(),
-    randomScalingFactor()
-  ],
   chart: {
-    height: 300,
     type: 'radialBar',
+    height: 350,
+    width: 380,
     foreColor: '#fff'
   },
   plotOptions: {
     radialBar: {
-      dataLabels: {
-        name: {
-          fontSize: '22px',
-        },
-        value: {
-          fontSize: '16px',
-        },
-        total: {
-          show: true,
-          label: 'Total',
-          formatter: function (w) {
-                  return randomScalingFactor()
-                }
-        }
-      }
-    }
+      size: undefined,
+      inverseOrder: true,
+      hollow: {
+        margin: 5,
+        size: '48%',
+        background: 'transparent',
+
+      },
+      track: {
+        show: false,
+      },
+      startAngle: -180,
+      endAngle: 180
+
+    },
   },
-  labels: ['Online', 'In Store'],
-};
+  stroke: {
+    lineCap: 'round'
+  },
+  series: [
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor()
+  ],
+  labels: ['Online', 'In store', 'Orders', 'Parties'],
+  legend: {
+    show: true,
+    floating: true,
+    position: 'top',
+    offsetX: 50,
+    offsetY: 0
+  },
+}
 
 // review pie chart
 var review_options = {

@@ -1,10 +1,13 @@
 body{
   background: #1d2632;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo', sans-serif !important;
   background: #000 url(../images/coffee-bean-bg.png) no-repeat 50%;
   background-attachment: fixed !important;
   background-size: cover;
   background-position: top;
+}
+.ht-100{
+    height: 100% !important;
 }
 .fixed-top {
     position: fixed;
@@ -329,6 +332,10 @@ body{
     font: 400 14px/22px 'Heebo', sans-serif;
     margin-bottom: 0.5rem !important;
 }
+.pie-graphs  .card-header{
+
+}
+
 table{
         color: #3d3d3d !important;
 }
@@ -349,6 +356,18 @@ table tr td:first-child .nav-profile-cover img{
     width: 20px;
     height: 20px;
 }
+table tr td:last-child i{
+    padding: 0 5px;
+}
+table tr td:last-child i:nth-child(1){
+    color: #3f51d4;
+}
+table tr td:last-child i:nth-child(2){
+    color: #2e826e;
+}
+table tr td:last-child i:nth-child(3){
+    color: #94426f;
+}
 footer p{
     font-size: 12px;
     color: #fff;
@@ -359,7 +378,6 @@ footer p{
 .apexcharts-legend {
     right: 32px !important;
 }
-
 .disp-mob{
     display: none;
 }
@@ -370,13 +388,13 @@ footer p{
     display: none;
 }
 
-
-
 .apexcharts-tooltip, .apexcharts-menu{
     color: #000 !important;
     font-weight: 900 !important;
 }
-
+.apexcharts-canvas text {
+    fill:  #fff !important;
+}
 label{
     font-size: 14px !important;
 }
@@ -399,6 +417,134 @@ label{
     background: #000;
     padding: 5px 10px 3px;
 }
+
+/* to do list */
+.to-do .bg-gradient2:before{
+    background: #000 url(../images/paper-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+.to-do h4{
+        margin: 8px 0 20px;
+        color: #000;
+}
+.to-do ul{
+    margin: o;
+    padding: 0;
+    height: 354px;
+    overflow-y: scroll;
+}
+/* width */
+.to-do ::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.to-do ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.to-do ::-webkit-scrollbar-thumb {
+  background: #4b4b4b; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.to-do ::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+.to-do ul li {
+    cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 37px;
+        list-style-type: none;
+        background: none;
+        font-size: 18px;
+        transition: 0.2s;
+        overflow: hidden;
+        border-radius: 6px;
+        margin: 0 15px 7px 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #000;
+}
+
+.to-do ul li:nth-child(odd) {
+  background: none;
+}
+.to-do ul li:hover {
+  background: #ddd;
+  color: #000;
+}
+.to-do ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+.to-do ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 16px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+.to-do .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.to-do .close:hover {
+  background-color: #f44336;
+  color: white;
+}
+.to-do .header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.to-do input {
+  margin: 10px 0 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px 0 0 6px;
+}
+.to-do input:focus{
+    outline: none;
+}
+.to-do .addBtn {
+ margin: 10px 0 0;
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0px 10px 10px 0;
+}
+.to-do .addBtn:hover {
+  background-color: #bbb;
+}
+
+/*MEDIA QUERY*/
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}*/
   .sidenav a {font-size: 18px;}

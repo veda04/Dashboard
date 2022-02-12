@@ -79,8 +79,8 @@
                      <!-- Row :  welcome + KPI Block  : START-->
                      <div class="row kpi">
                         <div class="intro-card col-lg-6 col-sm-12  col-xs-12 grid-margin disp-mob">
-                           <img src="assets/images/cupcake2.png" class="card-img-absolute" alt="circle-image">
-                           <div class="card bg-gradient-cc card-img-holder text-white bx-shadow" style="height:100%;">
+                           <img src="assets/images/cupcake2.png" class="card-img-absolute" alt="cake image">
+                           <div class="card bg-gradient-cc card-img-holder text-white bx-shadow ht-100">
                               <div class="card-body">
                                  <h6 class="card-text">Welcome</h6>
                                  <h2 class="mb-5">Cafe Host!</h2>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="intro-card col-lg-6 col-sm-12  col-xs-12 grid-margin disp-desk">
                            <img src="assets/images/cupcake2.png" class="card-img-absolute" alt="circle-image">
-                           <div class="card bg-gradient-cc card-img-holder text-white bx-shadow" style="height:100%;">
+                           <div class="card bg-gradient-cc card-img-holder text-white bx-shadow ht-100">
                               <div class="card-body">
                                  <h6 class="card-text">Welcome</h6>
                                  <h2 class="mb-5">Cafe Host!</h2>
@@ -148,7 +148,7 @@
                      <!-- Row :  Line chart + Donut graph  : START-->
                      <div class="row pie-graphs">
                         <div class="col-lg-12 grid-margin">
-                           <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                           <div class="card bg-gradient2 card-img-holder text-white ht-100">
                               <div class="card-header">
                                  <h5 class="card-title">Sale Performance</h5>
                                  <p>Last 15 days sale statistics</p>
@@ -160,138 +160,206 @@
                         </div>
                      </div>
                      <!--Row :  Line chart + Donut graph  : END -->
-                     <!-- Row : online order table  : START-->
-                     <div class="row">
-                        <div class="col-lg-12 grid-margin">
-                           <div class="card bg-gradient-table2 card-img-holder text-white" style="height:100%;">
-                              <div class="card-body">
-                                 <h4 class="card-title">Online Orders</h4>
-                                 <div class="table-responsive">
-                                    <table class="table">
-                                       <thead>
-                                          <tr>
-                                             <th>Customer Name</th>
-                                             <th> Date of Order </th>
-                                             <th> Date of Delivery </th>
-                                             <th> No of items </th>
-                                             <th>Total</th>
-                                             <th> Status </th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td>
-                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 1
-                                             </td>
-                                             <td> 04 Jan 2020 </td>
-                                             <td> 04 Jan 2020 </td>
-                                             <td> 30 </td>
-                                             <td>Rs. 1700</td>
-                                             <td>
-                                                <label class="badge badge-gradient-success text-success">READY</label>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td>
-                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 2
-                                             </td>
-                                             <td> 04 Jan 2020 </td>
-                                             <td> 04 Jan 2020 </td>
-                                             <td> 2 </td>
-                                             <td>Rs. 700</td>
-                                             <td>
-                                                <label class="badge badge-gradient-success text-warning">IN PROGRESS</label>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
+
+                     
+
+                      <!-- Row :  tables + to do list  : START-->
+                     <div class="row pie-graphs">
+                        <div class="col-lg-8">
+                           <!-- Row : online order table  : START-->
+                           <div class="row">
+                              <div class="col-lg-12 grid-margin">
+                                 <div class="card bg-gradient-table2 card-img-holder text-white" style="height:100%;">
+                                    <div class="card-body">
+                                       <h4 class="card-title">Online Orders</h4>
+                                       <div class="table-responsive">
+                                          <table class="table">
+                                             <thead>
+                                                <tr>
+                                                   <th>Customer Name</th>
+                                                   <th> Date of Order </th>
+                                                   <th> Date of Delivery </th>
+                                                   <th> No of items </th>
+                                                   <th>Total</th>
+                                                   <th> Status </th>
+                                                   <th> Action </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td>
+                                                      <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 1
+                                                   </td>
+                                                   <td> 04 Jan 2020 </td>
+                                                   <td> 04 Jan 2020 </td>
+                                                   <td> 30 </td>
+                                                   <td>Rs. 1700</td>
+                                                   <td>
+                                                      <label class="badge badge-gradient-success text-success">READY</label>
+                                                   </td>
+                                                   <td>
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                        <i class="fa-solid fa-eye"></i>
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 2
+                                                   </td>
+                                                   <td> 04 Jan 2020 </td>
+                                                   <td> 04 Jan 2020 </td>
+                                                   <td> 2 </td>
+                                                   <td>Rs. 700</td>
+                                                   <td>
+                                                      <label class="badge badge-gradient-success text-warning">IN PROGRESS</label>
+                                                   </td>
+                                                   <td>
+                                                      <i class="fa-solid fa-pen-to-square"></i>
+                                                      <i class="fa-solid fa-eye"></i>
+                                                      <i class="fa-solid fa-trash-can"></i>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Row :  online order table  : END -->
+
+                           <!-- Row :  In store reservations table  : START-->
+                           <div class="row">
+                              <div class="col-lg-12 grid-margin">
+                                 <div class="card bg-gradient-table card-img-holder text-white" style="height:100%;">
+                                    <div class="card-body">
+                                       <h4 class="card-title">In store Orders</h4>
+                                       <div class="table-responsive">
+                                          <table class="table">
+                                             <thead>
+                                                <tr>
+                                                   <th>Customer Name</th>
+                                                   <th> Time In </th>
+                                                   <th> Table No </th>
+                                                   <th> No of items </th>
+                                                   <th>Total</th>
+                                                   <th> Status </th>
+                                                   <th> Action </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td>
+                                                      <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 1
+                                                   </td>
+                                                   <td> 10:00 AM </td>
+                                                   <td> 1 </td>
+                                                   <td> 2 </td>
+                                                   <td>Rs. 700</td>
+                                                   <td>
+                                                      <label class="badge badge-gradient-success text-success">READY</label>
+                                                   </td>
+                                                   <td>
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                        <i class="fa-solid fa-eye"></i>
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 2
+                                                   </td>
+                                                   <td> 10:30 AM </td>
+                                                   <td> 2 </td>
+                                                   <td> 4 </td>
+                                                   <td>Rs. 800</td>
+                                                   <td>
+                                                      <label class="badge badge-gradient-success text-primary">SERVING NOW</label>
+                                                   </td>
+                                                   <td>
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                        <i class="fa-solid fa-eye"></i>
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 3
+                                                   </td>
+                                                   <td> 9:50 AM </td>
+                                                   <td> 3 </td>
+                                                   <td> 7 </td>
+                                                   <td>Rs. 10,000</td>
+                                                   <td>
+                                                      <label class="badge badge-gradient-success  text-white1">BILLED</label>
+                                                   </td>
+                                                   <td>
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                        <i class="fa-solid fa-eye"></i>
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 4
+                                                   </td>
+                                                   <td> 11:00 AM </td>
+                                                   <td> 4 </td>
+                                                   <td> 4 </td>
+                                                   <td>Rs. 600</td>
+                                                   <td>
+                                                      <label class="badge badge-gradient-success text-warning">IN PROGRESS</label>
+                                                   </td>
+                                                   <td>
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                        <i class="fa-solid fa-eye"></i>
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Row :  In store reservations table  : END -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                              <div class="col-lg-12 grid-margin to-do">
+                                 <div class="card bg-gradient2 card-img-holder text-white ht-100">
+                                    <div class="card-header">
+                                       <div id="todoDIV" class="header">
+                                         <h4>To Do List</h4>
+                                         <input type="text" id="todoInput" placeholder="New task">
+                                         <span onclick="newTask()" class="addBtn">Add</span>
+                                       </div>
+                                    </div>
+                                    <div class="card-body">
+                                       <ul id="todoUL">
+                                            <li>Deliver cookies to David's party</li>
+                                            <li class="checked">Pay Bills</li>
+                                            <li>Meet George</li>
+                                            <li>Buy eggs</li>
+                                            <li>Purchase Tables</li>
+                                            <li>Arrange for birthday celebration</li>
+                                       </ul>
+                                    </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <!--Row :  online order table  : END -->
-                     <!-- Row :  In store reservations table  : START-->
-                     <div class="row">
-                        <div class="col-lg-12 grid-margin">
-                           <div class="card bg-gradient-table card-img-holder text-white" style="height:100%;">
-                              <div class="card-body">
-                                 <h4 class="card-title">In store Orders</h4>
-                                 <div class="table-responsive">
-                                    <table class="table">
-                                       <thead>
-                                          <tr>
-                                             <th>Customer Name</th>
-                                             <th> Time In </th>
-                                             <th> Table No </th>
-                                             <th> No of items </th>
-                                             <th>Total</th>
-                                             <th> Status </th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td>
-                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 1
-                                             </td>
-                                             <td> 10:00 AM </td>
-                                             <td> 1 </td>
-                                             <td> 2 </td>
-                                             <td>Rs. 700</td>
-                                             <td>
-                                                <label class="badge badge-gradient-success text-success">READY</label>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td>
-                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 2
-                                             </td>
-                                             <td> 10:30 AM </td>
-                                             <td> 2 </td>
-                                             <td> 4 </td>
-                                             <td>Rs. 800</td>
-                                             <td>
-                                                <label class="badge badge-gradient-success text-primary">SERVING NOW</label>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td>
-                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 3
-                                             </td>
-                                             <td> 9:50 AM </td>
-                                             <td> 3 </td>
-                                             <td> 7 </td>
-                                             <td>Rs. 10,000</td>
-                                             <td>
-                                                <label class="badge badge-gradient-success  text-white1">BILLED</label>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td>
-                                                <div class="nav-profile-cover"><img src="assets/images/user.jpg" alt="image"></div> Customer 4
-                                             </td>
-                                             <td> 11:00 AM </td>
-                                             <td> 4 </td>
-                                             <td> 4 </td>
-                                             <td>Rs. 600</td>
-                                             <td>
-                                                <label class="badge badge-gradient-success text-warning">IN PROGRESS</label>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!--Row :  In store reservations table  : END -->
+                      <!-- Row :  tables + to do list  : END-->
+
                      <!-- Row :  Pie chart + bar graph  : START-->
                      <div class="row pie-graphs">
                         <div class="col-lg-6">
                            <div class="row">
                               <div class="col-lg-12 grid-margin">
-                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                 <div class="card bg-gradient2 card-img-holder text-white ht-100">
                                     <div class="card-header">
                                        <h5 class="card-title">Most liked by customers</h5>
                                        <p>Most reviewed products</p>
@@ -302,7 +370,7 @@
                                  </div>
                               </div>
                               <div class="col-lg-12 grid-margin">
-                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                 <div class="card bg-gradient2 card-img-holder text-white ht-100">
                                     <div class="card-header">
                                        <h5 class="card-title">Top Selling Products</h5>
                                        <p>Most selling products</p>
@@ -317,7 +385,7 @@
                         <div class="col-lg-6">
                            <div class="row">
                               <div class="col-lg-12 grid-margin">
-                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                 <div class="card bg-gradient2 card-img-holder text-white ht-100">
                                     <div class="card-header">
                                        <h5 class="card-title">Sale v/s Targets</h5>
                                        <p>Comparison of sales and targets over the years</p>
@@ -328,7 +396,7 @@
                                  </div>
                               </div>
                               <div class="col-lg-12 grid-margin">
-                                 <div class="card bg-gradient2 card-img-holder text-white" style="height:100%;">
+                                 <div class="card bg-gradient2 card-img-holder text-white ht-100">
                                     <div class="card-header">
                                        <h5 class="card-title">Happy Customers</h5>
                                        <p>Served customers today</p>
